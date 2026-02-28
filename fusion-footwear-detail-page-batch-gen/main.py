@@ -137,7 +137,12 @@ def main():
         print(f"✅ 屏数={screenNum} | userStr='{userStr}'\n")
 
         # 收集图片
-        prod_image_files = [f for f in prod_folder.iterdir() if f.is_file() and f.suffix.lower() in SUPPORTED_EXTENSIONS]
+        image_files = [
+        f for f in input_path.iterdir() 
+        if f.is_file() 
+        and not f.name.startswith('.') 
+        and f.suffix.lower() in SUPPORTED_EXTENSIONS
+        ]
         if not prod_image_files:
             print(f"⚠️ 【{prod_folder_name}】下无支持图片，跳过！\n")
             continue

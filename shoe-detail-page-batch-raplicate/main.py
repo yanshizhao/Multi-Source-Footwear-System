@@ -63,7 +63,12 @@ def main():
         print("=" * 70)
 
         # 收集图片
-        images = [f for f in prod_folder.iterdir() if f.is_file() and f.suffix.lower() in SUPPORTED_EXTENSIONS]
+        image_files = [
+        f for f in input_path.iterdir() 
+        if f.is_file() 
+        and not f.name.startswith('.')
+        and f.suffix.lower() in SUPPORTED_EXTENSIONS
+    ]
         if not images:
             print(f"[SKIP] 无支持图片")
             continue

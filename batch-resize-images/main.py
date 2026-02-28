@@ -66,7 +66,12 @@ def main():
     SUPPORTED_EXTENSIONS = {'.jpg', '.jpeg', '.png', '.bmp', '.webp'}
 
     # 筛选图片文件（仅文件，排除子文件夹）
-    image_files = [f for f in input_path.iterdir() if f.is_file() and f.suffix.lower() in SUPPORTED_EXTENSIONS]
+    image_files = [
+    f for f in input_path.iterdir() 
+    if f.is_file() 
+    and not f.name.startswith('.')
+    and f.suffix.lower() in SUPPORTED_EXTENSIONS
+]
     
     if not image_files:
         print("⚠️ 输入文件夹中没有找到支持的图片文件")

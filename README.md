@@ -36,7 +36,7 @@
 # 示例：运行鞋子掩码生成器
 cd shoe-mask-generator
 pip install -r requirements.txt
-修改config.py中的ACCESS_KEY_ID和ACCESS_KEY_SECRET
+修改config.py中的配置参数
 执行  python main.py <图片路径> [类别] [返回形式]
 
 ## 注意

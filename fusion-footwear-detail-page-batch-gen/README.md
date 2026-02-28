@@ -28,8 +28,16 @@
    ```bash
    git clone https://github.com/yanshizhao/fusion-footwear-detail-page-batch-gen.git
 
-2. **建立本地模板库**   
-   使用模式[2] 前，使用shoe-detail-page-batch-raplicateshoe-detail-page-batch-raplicate 流程建立本地模板库
-3、执行
+2. **安装依赖** 
    cd <项目文件夹>
+   pip install -r requirements.txt
+
+3. **建立本地模板库**   
+   使用模式[2] 前，使用shoe-detail-page-batch-raplicateshoe-detail-page-batch-raplicate 流程建立本地模板库
+
+4. **配置密钥与参数**
+   cp product_config.example.json product_config.json 按照注释修改文件
+   修改config.py文件中的参数
+    
+5. **运行主程序**
    python -i <产品图片根目录（必须是包含多个产品子文件夹的目录>

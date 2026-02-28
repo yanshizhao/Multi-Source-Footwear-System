@@ -19,6 +19,13 @@
 1. **克隆项目**
    ```bash
    git clone https://github.com/yanshizhao/shoe-mask-generator.git
+
+2. **安装依赖**
    cd <项目文件夹>
-   修改config.py中的ACCESS_KEY_ID和ACCESS_KEY_SECRET
+   pip install -r requirements.txt
+
+3. **配置密钥与参数**
+   修改config.py文件中的参数
+   
+4. **运行主程序**
    执行  python main.py <图片路径> [类别] [返回形式]

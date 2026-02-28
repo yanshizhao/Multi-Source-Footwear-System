@@ -18,6 +18,12 @@
    ```bash
    git clone https://github.com/yanshizhao/batch-resize-images.git
 
-第二步：
-   cd <项目文件夹>
+第二步： **安装依赖**
+   cd <项目文件夹> 
+   pip install -r requirements.txt 
+
+第三步： **配置密钥与参数**
+   修改config.py文件中的配置参数
+
+第四步： **运行主程序**
    执行 python main.py <图片所在本地文件夹> <模型接口平台> <图片尺寸比例> 1k

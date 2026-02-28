@@ -22,14 +22,17 @@ DeepSeek V3 将构图详情转换成nano banana pro的提示词。
 
 1. **克隆项目**
    ```bash
-第一步：
    git clone https://github.com/yanshizhao/Batch-Reprinting-Process-for-Details-Page-of-Footwear-and-Boots-E-commerce.git
 
-第二步：
+2. **安装依赖**
+   cd <项目文件夹>
+   pip install -r requirements.txt
+
+3. **配置密钥与参数**
    在 product_image 文件夹中新建 detail_page_template 文件夹
    在 detail_page_template 文件夹中创建需要复刻的产品详情页文件夹，为每一套详情页建立一个单独的文件夹
    将 模板详情页(即，想要复刻的模板)放在对应的产品详情页文件夹中，一次支持复刻6页
+   修改config.py文件中的参数
    
-第二步：
-   cd <项目文件夹>
+4. **运行主程序**
    执行 python main.py
